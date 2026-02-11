@@ -78,13 +78,14 @@ execute:
 
 > <!-- -->
 >
-> 5.  {r} 
-      - #\| echo: false 
-      - #\| fig-cap: "Simple Ploy of X Versus Y" 
-      - #\| label: fig-scatterplot 
-      - x \<- c(1:10) 
-      - y \<- 2\*x+ 5 plot (x, y) 
-      - As shown in Figure @fig-scatterplot, Y increases linearly with X. <!-- -->
+> 5.  {r}
+>
+> -   #| echo: false
+> -   #| fig-cap: "Simple Ploy of X Versus Y"
+> -   #| label: fig-scatterplot
+> -   x \<- c(1:10)
+> -   y \<- 2\*x+ 5 plot (x, y)
+> -   As shown in Figure @fig-scatterplot, Y increases linearly with X. <!-- -->
 >
 > <!-- -->
 >
@@ -97,15 +98,6 @@ execute:
 | Cara | 91    |
 | Dan  | 68    |
 
-> We want the code to print in the PDF, so set `echo: true`. Compute and print the average grade. 
-{r}
-#\| echo: true
-students <- data.frame(
-  - name = c("Ana", "Ben", "Cara", "Dan")
-  - grade = c(82, 75, 91, 68)
-)
-students
-  - average_grade <- mean(students$grade)
-  - average_grade
+> We want the code to print in the PDF, so set `echo: true`. Compute and print the average grade. {r} - #| echo: true - students \<- data.frame( - name = c("Ana", "Ben", "Cara", "Dan") - grade = c(82, 75, 91, 68) ) - students - average_grade \<- mean(students\$grade) - average_grade
 
 6.  Commit the finished quiz to your GitHub profile \[1 Mark\]
