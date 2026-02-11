@@ -359,11 +359,25 @@ Quiz 1}
 \setcounter{enumi}{4}
 \tightlist
 \item
-  \{r\} \#\textbar{} echo: false \#\textbar{} fig-cap: ``Simple Ploy of
-  X Versus Y'' \#\textbar{} label: fig-scatterplot x \textless- c(1:10)
-  y \textless- 2*x+ 5 plot (x, y) As shown in Figure
-  \textbf{?@fig-scatterplot}, Y increases linearly with X.
+  \{r\}
 \end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  \#\textbar{} echo: false
+\item
+  \#\textbar{} fig-cap: ``Simple Ploy of X Versus Y''
+\item
+  \#\textbar{} label: fig-scatterplot
+\item
+  x \textless- c(1:10)
+\item
+  y \textless- 2*x+ 5 plot (x, y)
+\item
+  As shown in Figure \textbf{?@fig-scatterplot}, Y increases linearly
+  with X.
+\end{itemize}
 
 \begin{enumerate}
 \def\labelenumi{(\alph{enumi})}
@@ -391,14 +405,10 @@ Dan & 68 \\
 \begin{quote}
 We want the code to print in the PDF, so set \texttt{echo:\ true}.
 Compute and print the average grade. \{r\} \#\textbar{} echo: true
+students \textless- data.frame( - name = c(``Ana'', ``Ben'', ``Cara'',
+``Dan'') - grade = c(82, 75, 91, 68) ) students - average\_grade
+\textless- mean(students\$grade) - average\_grade
 \end{quote}
-
-students \textless- data.frame( name = c(``Ana'', ``Ben'', ``Cara'',
-``Dan'') grade = c(82, 75, 91, 68) )
-
-students
-
-average\_grade \textless- mean(students\$grade) average\_grade
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
